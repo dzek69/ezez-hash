@@ -47,7 +47,7 @@
         "rootDirs": null,
         "typeRoots": null,
         "types": null,
-        "allowSyntheticDefaultImports": true,
+        "allowSyntheticDefaultImports": false,
         "esModuleInterop": true,
         "preserveSymlinks": false,
         "allowUmdGlobalAccess": false,

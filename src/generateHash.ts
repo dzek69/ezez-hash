@@ -1,4 +1,4 @@
-import crypto from "crypto";
+import * as crypto from "crypto";
 
 const DEFAULT_HASH_LENGTH = 16;
 
@@ -8,7 +8,7 @@ const DEFAULT_HASH_LENGTH = 16;
  * @returns {Promise<string>} - generated hash
  */
 const generateHash = (bytes = DEFAULT_HASH_LENGTH) => {
-    return new Promise((resolve, reject) => {
+    return new Promise<string>((resolve, reject) => {
         crypto.randomBytes(bytes, (err, buf) => {
             if (err) {
                 reject(err);
